@@ -339,3 +339,6 @@ h1 em{color:inherit;font-style:normal;text-decoration:none}
 a{text-decoration:none}
 .footer a:hover{color:var(--red)}
 .footer .links a{display:inline-block;margin:0 14px 6px 0}
+
+/* logo oficial do parceiro (versões colorida e branca, fundo transparente) */
+.brand--foot .partner{background:none;border-radius:0}
