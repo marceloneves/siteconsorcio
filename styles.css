@@ -304,3 +304,7 @@ details[open] summary{color:var(--blue)}
 .card__go{margin-top:6px}
 .pagehead{padding:72px 0}
 .pagehead::before{background:linear-gradient(90deg,var(--navy) 0%,var(--navy) 38%,rgba(7,6,51,.4) 70%,rgba(7,6,51,.15)),var(--ph) right 62%/cover no-repeat}
+
+/* nome Yamaha sem sublinhado ou destaque (regra da marca) */
+h1 em::after{content:none;display:none}
+h1 em{color:inherit;font-style:normal;text-decoration:none}
