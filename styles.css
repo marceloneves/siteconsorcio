@@ -298,3 +298,9 @@ details[open] summary{color:var(--blue)}
 .js .rv.in{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}}
 @media (max-width:860px){.sec{padding:84px 0}.hero{padding:72px 0 96px}.steps li::after{display:none}.card{min-height:340px}.topbar__in{height:72px}.nav{top:72px}}
+
+/* cartões: texto ancorado embaixo, número no topo */
+.card h3{margin-top:auto}
+.card__go{margin-top:6px}
+.pagehead{padding:72px 0}
+.pagehead::before{background:linear-gradient(90deg,var(--navy) 0%,var(--navy) 38%,rgba(7,6,51,.4) 70%,rgba(7,6,51,.15)),var(--ph) right 62%/cover no-repeat}
