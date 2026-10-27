@@ -39,6 +39,8 @@ if (slides.length) {
   function go(i, user) {
     cur = (i + slides.length) % slides.length;
     slides.forEach((s, n) => s.classList.toggle('is-active', n === cur));
+    const imgs = $$('.hero__img');
+    imgs.forEach((im, n) => im.classList.toggle('on', n === cur % imgs.length));
     $$('i', dots).forEach((d, n) => d.classList.toggle('on', n === cur));
     if (user) { clearInterval(timer); timer = setInterval(() => go(cur + 1), 7000); }
   }

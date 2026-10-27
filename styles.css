@@ -173,3 +173,14 @@ main>.sec:first-of-type{min-height:60vh}
   .hero__bg{background:linear-gradient(rgba(7,6,51,.72),rgba(7,6,51,.72)),url(assets/hero-bg.jpg) center/cover no-repeat,var(--navy)}
   .hero__photo{display:none}
 }
+
+/* fotos alternadas no hero */
+.hero__img{position:absolute;inset:0;background:right center/auto 118% no-repeat;opacity:0;transition:opacity 1s ease}
+.hero__img.on{opacity:1}
+.hero__bg{background:
+  linear-gradient(90deg,var(--navy) 0%,var(--navy) 34%,rgba(7,6,51,.55) 52%,rgba(7,6,51,0) 72%),
+  linear-gradient(rgba(7,6,51,.25),rgba(7,6,51,.25))}
+@media (max-width:860px){
+  .hero__img{background-position:center;background-size:cover}
+  .hero__bg{background:rgba(7,6,51,.72)}
+}
