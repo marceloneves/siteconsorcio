@@ -158,3 +158,18 @@ summary{color:var(--navy)}
 .pagehead a{text-decoration:none;opacity:.75}.pagehead a:hover{opacity:1}
 .pagehead i{font-style:normal;opacity:.4;margin:0 6px}.pagehead span{color:#fff;font-weight:600}
 main>.sec:first-of-type{min-height:60vh}
+
+/* hero com foto da moto ao fundo */
+.hero__bg{background:
+  linear-gradient(90deg,var(--navy) 0%,var(--navy) 34%,rgba(7,6,51,.55) 52%,rgba(7,6,51,0) 72%),
+  linear-gradient(rgba(7,6,51,.25),rgba(7,6,51,.25)),
+  url(assets/hero-bg.jpg) right center/auto 118% no-repeat,
+  var(--navy)}
+.hero__photo{top:auto;bottom:22px;right:max(16px,calc((100% - 1160px)/2));width:auto;gap:12px;flex-direction:row-reverse;align-items:center;background:rgba(7,6,51,.78);backdrop-filter:blur(6px);padding:10px 16px 10px 10px;border:1px solid rgba(255,255,255,.2);border-radius:60px}
+.hero__photo>img:first-child{width:72px;height:72px;border-radius:50%;object-fit:cover;object-position:top;border:2px solid var(--red);-webkit-mask-image:none;mask-image:none}
+.hero__partner{position:static;height:56px;box-shadow:none}
+.hero__logo{display:none}
+@media (max-width:860px){
+  .hero__bg{background:linear-gradient(rgba(7,6,51,.72),rgba(7,6,51,.72)),url(assets/hero-bg.jpg) center/cover no-repeat,var(--navy)}
+  .hero__photo{display:none}
+}
