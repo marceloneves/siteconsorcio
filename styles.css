@@ -199,3 +199,102 @@ main>.sec:first-of-type{min-height:60vh}
 .card__img{width:calc(100% + 60px);margin:-30px -30px 12px;height:170px;object-fit:cover;object-position:center 60%;max-width:none}
 .side-img{width:100%;max-width:520px;margin-top:28px;aspect-ratio:4/3;object-fit:cover;border:1px solid var(--edge)}
 @media (max-width:860px){.side-img{max-width:none;aspect-ratio:16/10}}
+
+/* ================= LAYOUT PREMIUM ================= */
+:root{--ease:cubic-bezier(.2,.7,.2,1)}
+body{letter-spacing:.005em}
+.topbar{box-shadow:0 1px 0 var(--edge),0 12px 30px -20px rgba(7,6,51,.25)}
+.topbar__in{height:84px}
+.nav{font-size:.98rem;letter-spacing:.12em;gap:30px}
+.nav a{position:relative;padding:6px 0;box-shadow:none}
+.nav a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:2px;background:var(--red);transition:right .35s var(--ease)}
+.nav a:hover::after,.nav a[aria-current=page]::after{right:0}
+.nav a[aria-current=page]{box-shadow:none}
+
+/* botões angulares (referência esportiva) */
+.btn{position:relative;padding:16px 38px 16px 32px;border:0;letter-spacing:.12em;font-size:1.05rem;clip-path:polygon(0 0,100% 0,calc(100% - 14px) 100%,0 100%);transition:background .25s,transform .25s var(--ease)}
+.btn:hover{transform:translateX(3px)}
+.btn--ghost{background:rgba(255,255,255,.08);box-shadow:inset 0 0 0 2px var(--blue)}
+.btn--ghost:hover{background:var(--blue)}
+.btn--sm{padding:11px 28px 11px 22px;font-size:.95rem}
+
+/* hero */
+.hero{min-height:min(720px,calc(100svh - 84px));padding:96px 0 120px}
+.hero__bg{background:
+  linear-gradient(90deg,var(--navy) 0%,var(--navy) 38%,rgba(7,6,51,.6) 56%,rgba(7,6,51,0) 78%),
+  linear-gradient(0deg,rgba(7,6,51,.9),rgba(7,6,51,0) 28%)}
+h1{font-size:clamp(3rem,7.4vw,6.4rem);letter-spacing:-.005em}
+h1 em{color:#fff;position:relative;display:inline-block}
+h1 em::after{content:"";position:absolute;left:0;right:0;bottom:.04em;height:.12em;background:var(--red);transform:skewX(-20deg)}
+.eyebrow{display:flex;align-items:center;gap:14px;letter-spacing:.22em;font-size:.95rem}
+.eyebrow::before{content:"";width:44px;height:2px;background:var(--red)}
+.lead{font-size:1.25rem;font-weight:300;line-height:1.55}
+.arrow{border-radius:0;width:48px;height:48px;border-color:rgba(255,255,255,.35)}
+.dots i{width:44px;height:3px}.dots i.on{background:var(--red)}
+
+/* faixa de diferenciais sobre o hero */
+.strip{position:relative;z-index:5;margin-top:-56px}
+.strip__in{list-style:none;padding:0;display:grid;grid-template-columns:repeat(3,1fr);background:#fff;box-shadow:0 24px 60px -24px rgba(7,6,51,.45);border-top:4px solid var(--red)}
+.strip__in li{padding:28px 32px;display:grid;gap:2px;border-right:1px solid var(--edge)}
+.strip__in li:last-child{border:0}
+.strip__in strong{font-family:var(--head);font-weight:800;text-transform:uppercase;font-size:1.7rem;line-height:1.1;color:var(--navy)}
+.strip__in span{color:var(--ink);font-size:.95rem}
+@media (max-width:860px){.strip{margin-top:-30px}.strip__in{grid-template-columns:1fr}.strip__in li{border-right:0;border-bottom:1px solid var(--edge)}}
+
+/* seções */
+.sec{padding:128px 0}
+.sec--dark,.sec--light{background:var(--soft)}
+.title{font-size:clamp(2.2rem,4.8vw,3.6rem);padding-bottom:22px;margin-bottom:20px}
+.title::after{width:84px;height:4px;background:var(--red);transform:skewX(-20deg)}
+.muted{font-size:1.1rem}
+.lead{color:inherit}
+
+/* cartões com foto em tela cheia */
+.cards{gap:24px;margin-top:56px}
+.card{position:relative;overflow:hidden;min-height:420px;justify-content:flex-end;padding:32px;border:0;border-top:0;color:#fff;background:
+  repeating-linear-gradient(115deg,transparent 0 40px,rgba(44,44,255,.18) 40px 41px),
+  linear-gradient(160deg,var(--blue),var(--navy) 70%);box-shadow:0 24px 50px -28px rgba(7,6,51,.6)}
+.card__img{position:absolute;inset:0;width:100%;height:100%;margin:0;object-fit:cover;object-position:center 55%;transition:transform .9s var(--ease)}
+.card::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(0deg,rgba(7,6,51,.96) 6%,rgba(7,6,51,.35) 55%,rgba(7,6,51,0))}
+.card>*:not(.card__img){position:relative;z-index:2}
+.card:hover{transform:none}
+.card:hover .card__img{transform:scale(1.07)}
+.card__n{position:absolute!important;top:22px;left:28px;font-size:3.4rem;color:transparent;-webkit-text-stroke:1.5px rgba(255,255,255,.7)}
+.card h3{color:#fff;font-size:2.2rem}
+.card p{color:rgba(255,255,255,.88)}
+.card__go{color:#fff;display:inline-flex;gap:10px;align-items:center;padding-top:8px}
+.card__go::after{content:"";width:34px;height:2px;background:var(--red);transition:width .35s var(--ease)}
+.card:hover .card__go::after{width:60px}
+
+/* passos */
+.steps{gap:0;margin-top:64px;counter-reset:s}
+.steps li{padding:0 28px 0 0;position:relative}
+.steps li:not(:last-child)::after{content:"";position:absolute;top:34px;left:70px;right:14px;height:1px;background:var(--edge)}
+.steps li b{display:block;font-size:4.6rem;color:transparent;-webkit-text-stroke:2px var(--red);margin-bottom:10px}
+.steps h3{font-size:1.7rem}
+
+/* painéis */
+.panel{padding:40px;border:0;border-top:4px solid var(--blue);box-shadow:0 30px 70px -34px rgba(7,6,51,.4)}
+input,select,textarea{padding:14px;transition:border-color .2s,box-shadow .2s}
+input:focus,select:focus,textarea:focus{outline:0;border-color:var(--blue);box-shadow:0 0 0 3px rgba(44,44,255,.18)}
+.result{border-left:4px solid var(--red)}
+
+/* faq */
+details{padding:24px 0;transition:background .2s}
+summary{font-size:1.5rem}
+details[open] summary{color:var(--blue)}
+
+/* sobre */
+.portrait{padding:0;border:0;box-shadow:0 34px 70px -30px rgba(7,6,51,.55)}
+.portrait::after{content:"";position:absolute;right:-14px;bottom:-14px;width:46%;height:46%;border-right:4px solid var(--red);border-bottom:4px solid var(--red);z-index:-1}
+.stats li{box-shadow:0 14px 34px -22px rgba(7,6,51,.5)}
+
+/* faixa compartilhar e rodapé */
+.share{background:linear-gradient(100deg,var(--blue),var(--navy));padding:72px 0}
+.footer{border-top:4px solid var(--red);padding-top:72px}
+
+/* animações de entrada */
+.js .rv{opacity:0;transform:translateY(34px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}}
+@media (max-width:860px){.sec{padding:84px 0}.hero{padding:72px 0 96px}.steps li::after{display:none}.card{min-height:340px}.topbar__in{height:72px}.nav{top:72px}}
