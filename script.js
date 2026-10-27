@@ -81,3 +81,13 @@ if (copy) copy.addEventListener('click', async e => {
   catch { e.target.textContent = 'Copie pela barra de endereço'; }
   setTimeout(() => e.target.textContent = 'Copiar link', 2500);
 });
+
+/* botão flutuante de WhatsApp (todas as páginas) */
+const fab = document.createElement('a');
+fab.className = 'wa-fab';
+fab.href = wa('Olá! Gostaria de saber mais sobre o Consórcio Yamaha.');
+fab.target = '_blank';
+fab.rel = 'noopener';
+fab.setAttribute('aria-label', 'Falar no WhatsApp');
+fab.innerHTML = '<svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true"><path fill="#fff" d="M16 3C9.4 3 4 8.3 4 14.9c0 2.3.7 4.5 1.9 6.3L4 28l7-1.8c1.7.9 3.100 1.300 5 1.300 6.600 0 12-5.300 12-11.900S22.600 3 16 3zm0 21.700c-1.700 0-3.300-.5-4.700-1.300l-.3-.2-4.100 1.100 1.100-4-.2-.3c-1-1.400-1.500-3-1.500-4.700C6.300 9.600 10.700 5.300 16 5.300s9.700 4.300 9.700 9.600-4.400 9.800-9.700 9.800zm5.300-7.300c-.3-.1-1.700-.8-2-.9-.3-.1-.5-.1-.7.100-.2.300-.8.900-.9 1.100-.2.200-.3.200-.6.100-.3-.1-1.200-.4-2.300-1.400-.8-.8-1.400-1.700-1.600-2-.2-.3 0-.4.100-.6l.4-.5c.1-.2.200-.3.300-.5.100-.2 0-.4 0-.5l-.9-2.100c-.2-.5-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.400-.3.300-1 1-1 2.400s1 2.800 1.200 3c.1.2 2 3.100 4.900 4.300.7.300 1.200.5 1.600.6.700.2 1.300.2 1.800.1.600-.1 1.700-.7 1.900-1.400.2-.7.200-1.200.2-1.400-.1-.1-.3-.2-.6-.3z"/></svg>';
+document.body.append(fab);

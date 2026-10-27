@@ -184,3 +184,10 @@ main>.sec:first-of-type{min-height:60vh}
   .hero__img{background-position:center;background-size:cover}
   .hero__bg{background:rgba(7,6,51,.72)}
 }
+
+/* botão flutuante WhatsApp */
+.wa-fab{position:fixed;right:20px;bottom:20px;z-index:60;width:60px;height:60px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 6px 20px rgba(0,0,0,.35);transition:transform .2s}
+.wa-fab:hover{transform:scale(1.08)}
+.wa-fab::before{content:"";position:absolute;inset:0;border-radius:50%;background:#25D366;animation:wa-pulse 2.2s infinite;z-index:-1}
+@keyframes wa-pulse{0%{transform:scale(1);opacity:.55}100%{transform:scale(1.6);opacity:0}}
+@media (prefers-reduced-motion:reduce){.wa-fab::before{animation:none}}
