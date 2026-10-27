@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Consórcio Yamaha | Representante Autorizado</title>
+  <meta name="description" content="Conquiste sua moto ou produto náutico Yamaha com o Consórcio Yamaha. Simule agora com um Representante Autorizado.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300;600;800&family=Saira:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap topbar__in">
+    <a href="#inicio" class="brand" aria-label="Yamaha Consórcio - Representante Autorizado">
+      <img src="assets/logo-principal.png" alt="Yamaha Consórcio - Representante Autorizado" width="112" height="58">
+      <span class="sep" aria-hidden="true"></span>
+      <img class="partner" src="assets/logo-parceiro.jpg" alt="Seu Consórcio" height="56">
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#inicio">Início</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#simulador">Simulador</a>
+      <a href="#faq">Dúvidas</a>
+      <a href="#sobre">Quem somos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <a class="btn btn--red btn--sm" href="#simulador">Simular agora</a>
+    <button class="burger" aria-label="Abrir menu" aria-controls="nav" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="inicio">
+
+  <!-- HERO / CARROSSEL -->
+  <section class="hero" aria-roledescription="carrossel">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <figure class="hero__photo">
+      <img src="assets/representante.jpg" alt="Representante Autorizado Yamaha Consórcio" width="450" height="600">
+      <img class="hero__partner" src="assets/logo-parceiro.jpg" alt="Seu Consórcio" height="90">
+    </figure>
+    <div class="wrap hero__in">
+      <div class="slides" id="slides">
+        <article class="slide is-active">
+          <p class="eyebrow">Guia de consórcio / <b>2026</b></p>
+          <h1>Conquiste sua <em>Yamaha</em> com o Consórcio</h1>
+          <p class="lead">Tire seus planos do papel sem se preocupar com juros e valor de entrada.</p>
+        </article>
+        <article class="slide">
+          <p class="eyebrow">Motos</p>
+          <h1>Da cidade à trilha, a sua <em>moto</em> te espera</h1>
+          <p class="lead">Planeje a compra no seu ritmo, com parcelas que cabem no orçamento.</p>
+        </article>
+        <article class="slide">
+          <p class="eyebrow">Náuticos</p>
+          <h1>Seu próximo fim de semana é na <em>água</em></h1>
+          <p class="lead">Motores de popa e jet skis também podem ser conquistados por consórcio.</p>
+        </article>
+      </div>
+      <div class="hero__cta">
+        <a class="btn btn--red" href="#simulador">Simular agora</a>
+        <a class="btn btn--ghost" href="#contato">Falar com um representante</a>
+      </div>
+      <div class="carousel-ctrl">
+        <button class="arrow" id="prev" aria-label="Voltar">‹</button>
+        <div class="dots" id="dots"></div>
+        <button class="arrow" id="next" aria-label="Próximo">›</button>
+      </div>
+    </div>
+    <div class="hero__logo wrap">
+      <img src="assets/logo-branco.png" alt="" width="160" height="80" aria-hidden="true">
+    </div>
+  </section>
+
+  <!-- PRODUTOS -->
+  <section class="sec" id="produtos">
+    <div class="wrap">
+      <h2 class="title">Escolha o seu <span>objetivo</span></h2>
+      <div class="cards">
+        <a class="card" href="#simulador" data-obj="moto">
+          <span class="card__n">01</span>
+          <h3>Motos</h3>
+          <p>Scooters, urbanas, trail e esportivas da linha Yamaha.</p>
+          <span class="card__go">Simular →</span>
+        </a>
+        <a class="card" href="#simulador" data-obj="nautico">
+          <span class="card__n">02</span>
+          <h3>Náuticos</h3>
+          <p>Motores de popa e jet skis para quem vive a água.</p>
+          <span class="card__go">Simular →</span>
+        </a>
+        <a class="card" href="#simulador" data-obj="outros">
+          <span class="card__n">03</span>
+          <h3>Outros produtos</h3>
+          <p>Consulte o representante sobre as demais linhas disponíveis.</p>
+          <span class="card__go">Simular →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section class="sec sec--dark" id="como-funciona">
+    <div class="wrap">
+      <h2 class="title">Como <span>funciona</span></h2>
+      <ol class="steps">
+        <li><b>1</b><h3>Simule</h3><p>Escolha o objetivo, o valor do bem e o prazo que cabe no seu bolso.</p></li>
+        <li><b>2</b><h3>Adira ao grupo</h3><p>Seu representante autorizado conduz toda a contratação, com transparência.</p></li>
+        <li><b>3</b><h3>Seja contemplado</h3><p>A contemplação ocorre por sorteio ou lance, conforme as regras do grupo.</p></li>
+        <li><b>4</b><h3>Retire sua Yamaha</h3><p>Com a carta de crédito, escolha o produto e realize o sonho.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- SIMULADOR -->
+  <section class="sec" id="simulador">
+    <div class="wrap sim">
+      <div>
+        <h2 class="title">Faça sua <span>simulação</span></h2>
+        <p class="muted">Veja uma estimativa de parcela e receba a proposta completa pelo WhatsApp.</p>
+      </div>
+      <form class="panel" id="simForm" novalidate>
+        <label>Objetivo
+          <select id="obj">
+            <option value="moto">Moto</option>
+            <option value="nautico">Náutico</option>
+            <option value="outros">Outros produtos</option>
+          </select>
+        </label>
+        <label>Valor do bem: <output id="valorOut">R$ 20.000</output>
+          <input type="range" id="valor" min="8000" max="150000" step="1000" value="20000">
+        </label>
+        <label>Prazo
+          <select id="prazo">
+            <option>36</option><option>48</option><option selected>60</option><option>72</option><option>80</option>
+          </select>
+        </label>
+        <div class="result" aria-live="polite">
+          <span>Parcela estimada</span>
+          <strong id="parcela">—</strong>
+          <small>Simulação ilustrativa, sujeita à análise e às condições do grupo.</small>
+        </div>
+        <a class="btn btn--red" id="simWa" href="#" target="_blank" rel="noopener">Receber proposta no WhatsApp</a>
+      </form>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="sec sec--light" id="faq">
+    <div class="wrap wrap--narrow">
+      <h2 class="title">Perguntas frequentes sobre <span>consórcio Yamaha</span></h2>
+      <details open><summary>O que é consórcio?</summary><p>É uma forma de planejamento financeiro em grupo: os participantes contribuem mensalmente e, a cada período, alguns são contemplados com a carta de crédito, por sorteio ou lance.</p></details>
+      <details><summary>Existe cobrança de juros?</summary><p>O consórcio não cobra juros. Há taxa de administração e demais custos previstos em contrato, que devem ser consultados com o representante antes da adesão.</p></details>
+      <details><summary>Preciso dar entrada?</summary><p>Não há valor de entrada obrigatório para participar do grupo. Consulte as condições da sua cota.</p></details>
+      <details><summary>Como sou contemplado?</summary><p>Mensalmente, por sorteio ou por lance, conforme as regras do grupo.</p></details>
+      <details><summary>O que é um Representante Autorizado?</summary><p>É um parceiro habilitado a apresentar e comercializar o Consórcio Yamaha, seguindo as diretrizes da marca.</p></details>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="sec" id="contato">
+    <div class="wrap contact">
+      <div>
+        <h2 class="title">Entre em <span>contato</span></h2>
+        <p class="muted">Deixe seus dados e retornamos o mais breve possível.</p>
+        <ul class="info">
+          <li><b>Representante</b> <span data-cfg="nome"></span></li>
+          <li><b>WhatsApp</b> <a data-cfg="telLink"></a></li>
+          <li><b>E-mail</b> <a data-cfg="emailLink"></a></li>
+        </ul>
+      </div>
+      <form class="panel" id="contactForm">
+        <label>Nome<input name="nome" required autocomplete="name"></label>
+        <label>Telefone / WhatsApp<input name="tel" type="tel" required autocomplete="tel"></label>
+        <label>Interesse
+          <select name="interesse"><option>Moto</option><option>Náutico</option><option>Outros</option></select>
+        </label>
+        <label>Mensagem<textarea name="msg" rows="3"></textarea></label>
+        <label class="check"><input type="checkbox" required> Concordo com o tratamento dos meus dados conforme a Política de Privacidade.</label>
+        <button class="btn btn--red" type="submit">Enviar pelo WhatsApp</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="sec sec--dark" id="sobre">
+    <div class="wrap about">
+      <figure class="portrait">
+        <img src="assets/representante.jpg" alt="Representante Autorizado Yamaha Consórcio" width="450" height="600" loading="lazy">
+        <figcaption><span data-cfg="nome"></span><small>Representante Autorizado</small></figcaption>
+      </figure>
+      <div>
+        <h2 class="title">Conheça mais <span>sobre nós</span></h2>
+        <p class="lead" data-cfg="sobre"></p>
+      <ul class="stats">
+        <li><strong>+ Planejamento</strong><span>Sem juros e sem entrada obrigatória</span></li>
+        <li><strong>+ Confiança</strong><span>Marca Yamaha e fiscalização do Banco Central</span></li>
+        <li><strong>+ Atendimento</strong><span>Do início à contemplação</span></li>
+      </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPARTILHAR -->
+  <section class="share">
+    <div class="wrap share__in">
+      <h2>Copie o link e envie para seus contatos</h2>
+      <button class="btn btn--red" id="copy">Copiar link</button>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__grid">
+    <div>
+      <div class="brand brand--foot">
+        <img src="assets/logo-branco.png" alt="Yamaha Consórcio - Representante Autorizado" width="140" height="70">
+        <span class="sep" aria-hidden="true"></span>
+        <img class="partner" src="assets/logo-parceiro.jpg" alt="Seu Consórcio" height="70">
+      </div>
+      <p class="small" data-cfg="razao"></p>
+      <p class="small" data-cfg="endereco"></p>
+    </div>
+    <div>
+      <h4>Canais de atendimento</h4>
+      <p class="small"><a data-cfg="telLink"></a></p>
+      <p class="small"><a data-cfg="emailLink"></a></p>
+      <h4>Gerencie seu consórcio pelo app</h4>
+      <p class="small">Disponível nas lojas Google Play e App Store.</p>
+    </div>
+    <div>
+      <h4>Institucional</h4>
+      <p class="small links"><a href="#">Política de Privacidade</a> <a href="#">Código de Ética</a> <a href="#">Canal de Denúncia</a> <a href="#">Ouvidoria</a> <a href="#">Termos de uso</a> <a href="#">Gerenciar cookies</a></p>
+      <p class="small seal">Autorizado e fiscalizado pelo Banco Central · Este ambiente é 100% seguro</p>
+    </div>
+  </div>
+  <div class="wrap legal">
+    <p>© 2026 Yamaha Consórcio – Representante Autorizado. As imagens são ilustrativas. Valores e condições sujeitos a alteração e análise de crédito.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
