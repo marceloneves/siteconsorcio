@@ -151,3 +151,10 @@ summary{color:var(--navy)}
 .slides,.hero__cta,.carousel-ctrl{max-width:min(620px,58%)}
 .brand .partner{height:64px}
 @media (max-width:860px){.hero__photo{display:none}.slides,.hero__cta,.carousel-ctrl{max-width:none}}
+
+/* páginas internas */
+.nav a[aria-current=page]{color:var(--red);opacity:1;box-shadow:0 2px 0 var(--red)}
+.pagehead{background:var(--navy);color:#fff;padding:14px 0;font-family:var(--head);text-transform:uppercase;letter-spacing:.08em;font-size:.95rem}
+.pagehead a{text-decoration:none;opacity:.75}.pagehead a:hover{opacity:1}
+.pagehead i{font-style:normal;opacity:.4;margin:0 6px}.pagehead span{color:#fff;font-weight:600}
+main>.sec:first-of-type{min-height:60vh}
