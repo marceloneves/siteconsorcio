@@ -96,5 +96,8 @@ document.body.append(fab);
 document.documentElement.classList.add('js');
 const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .15 });
 $$('.title, .card, .steps li, .strip__in li, .panel, .portrait, .stats li, details, .side-img, .info').forEach((el, i) => {
-  el.classList.add('rv'); el.style.transitionDelay = (i % 4) * 90 + 'ms'; io.observe(el);
+  el.classList.add('rv'); io.observe(el);
 });
+
+/* garantia: se a animação de entrada não disparar, mostra tudo */
+setTimeout(() => $$('.rv:not(.in)').forEach(el => el.classList.add('in')), 2500);

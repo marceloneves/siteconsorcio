@@ -328,3 +328,9 @@ h1 em{color:inherit;font-style:normal;text-decoration:none}
 @media (max-width:1100px){.topbar .btn--sm{display:none}}
 @media (max-width:980px){.nav{white-space:normal}}
 @media (max-width:860px){h1{font-size:clamp(2.2rem,10vw,3.4rem);overflow-wrap:anywhere}.slide{max-width:100%}}
+
+@media (max-width:860px){.hero__bg{background:linear-gradient(rgba(7,6,51,.82),rgba(7,6,51,.82))}}
+
+/* entrada mais curta e hero mobile com a moto visível embaixo */
+.js .rv{transition-duration:.6s}
+@media (max-width:860px){.hero__bg{background:linear-gradient(rgba(7,6,51,.9) 0%,rgba(7,6,51,.78) 55%,rgba(7,6,51,.35) 100%)}}
