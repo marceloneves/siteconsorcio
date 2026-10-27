@@ -334,3 +334,8 @@ h1 em{color:inherit;font-style:normal;text-decoration:none}
 /* entrada mais curta e hero mobile com a moto visível embaixo */
 .js .rv{transition-duration:.6s}
 @media (max-width:860px){.hero__bg{background:linear-gradient(rgba(7,6,51,.9) 0%,rgba(7,6,51,.78) 55%,rgba(7,6,51,.35) 100%)}}
+
+/* links sem sublinhado; destaque só ao passar o mouse */
+a{text-decoration:none}
+.footer a:hover{color:var(--red)}
+.footer .links a{display:inline-block;margin:0 14px 6px 0}
