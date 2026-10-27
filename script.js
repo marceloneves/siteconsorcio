@@ -1,11 +1,11 @@
 /* ===== CONFIGURAÇÃO DO REPRESENTANTE — edite aqui ===== */
 const CONFIG = {
-  nome: 'Nome do Representante',
-  razao: 'Razão Social do Representante Ltda · CNPJ 00.000.000/0001-00',
-  endereco: 'Rua Exemplo, 000 | Bairro | Cidade – UF | CEP: 00000-000',
-  whatsapp: '5500000000000',          // DDI + DDD + número, só dígitos
-  telefone: '(00) 00000-0000',
-  email: 'contato@seudominio.com.br',
+  nome: 'Seu Consórcio',
+  razao: 'Seu Consórcio Administradora de Consórcios Ltda. · CNPJ 16.516.142/0001-46',
+  endereco: 'Av. das Nações Unidas, 14.261, Ala B, 27º andar | Morumbi | São Paulo – SP',
+  whatsapp: '5511982437169',          // DDI + DDD + número, só dígitos
+  telefone: '(11) 98243-7169 / (11) 2729-4472',
+  email: 'contato@seuconsorcioimobiliario.com.br',
   sobre: 'Somos Representante Autorizado do Consórcio Yamaha, com atendimento próximo e transparente para ajudar você a planejar a conquista da sua moto ou produto náutico.',
   taxaAdm: 0.17,                      // taxa de administração total (ilustrativa — ajuste conforme o grupo)
 };
