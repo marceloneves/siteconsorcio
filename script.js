@@ -6,7 +6,7 @@ const CONFIG = {
   whatsapp: '5511982437169',          // DDI + DDD + número, só dígitos
   telefone: '(11) 9 8243-7169 / (11) 2729-4472',
   email: 'contato@seuconsorcioimobiliario.com.br',
-  sobre: 'Somos Representante Autorizado do Consórcio Yamaha, com atendimento próximo e transparente para ajudar você a planejar a conquista da sua moto ou produto náutico.',
+  sobre: 'Somos Representante Autorizado do Consórcio Imobiliário, com atendimento próximo e transparente para ajudar você a planejar a conquista do seu imóvel.',
   taxaAdm: 0.17,                      // taxa de administração total (ilustrativa — ajuste conforme o grupo)
 };
 
@@ -18,7 +18,7 @@ const brl = n => n.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' 
 /* textos configuráveis */
 $$('[data-cfg]').forEach(el => {
   const k = el.dataset.cfg;
-  if (k === 'telLink') { el.textContent = CONFIG.telefone; el.href = wa('Olá! Gostaria de falar sobre o Consórcio Yamaha.'); el.target = '_blank'; el.rel = 'noopener'; }
+  if (k === 'telLink') { el.textContent = CONFIG.telefone; el.href = wa('Olá! Gostaria de falar sobre o Consórcio Imobiliário.'); el.target = '_blank'; el.rel = 'noopener'; }
   else if (k === 'emailLink') { el.textContent = CONFIG.email; el.href = 'mailto:' + CONFIG.email; }
   else el.textContent = CONFIG[k];
 });
@@ -85,7 +85,7 @@ if (copy) copy.addEventListener('click', async e => {
 /* botão flutuante de WhatsApp (todas as páginas) */
 const fab = document.createElement('a');
 fab.className = 'wa-fab';
-fab.href = wa('Olá! Gostaria de saber mais sobre o Consórcio Yamaha.');
+fab.href = wa('Olá! Gostaria de saber mais sobre o Consórcio Imobiliário.');
 fab.target = '_blank';
 fab.rel = 'noopener';
 fab.setAttribute('aria-label', 'Falar no WhatsApp');
